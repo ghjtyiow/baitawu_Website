@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<title>百塔屋 | 打造中国最好的平台</title>
+<meta name="Keywords" content="百塔屋">
+<meta name="Description" content="百塔屋">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div id="wrapper">
+  <div class="box">
+    <div class="login_top"><i></i></div>
+    <div class="login_Now">
+      <p>如有账号，请登录</p>
+      <p><input type="text" id="username" placeholder="手机号"></p>
+      <p><input type="password" id="password" placeholder="密　码"></p>
+      <span class="loginBtn" onclick="Save()">登 录</span>
+      <p><span class="fr forget"><a href="#" class="forget">忘记密码</a>｜<a href="#" class="free">免费注册</a></span><label for="ck_rmbUser"><input type="checkbox" id="ck_rmbUser"> 记住用户名</label></p>
+    </div>
+  </div>
+
+  <!--footer-->
+  <div class="footerCall">
+    <div class="box over">
+      <div class="fr">
+        <p class="codeBox"><img src="images/footer_code.png" title="关注微信">关注微信</p>
+        <p class="codeBox ml70 mr15"><img src="images/footer_code.png" title="关注微博">关注微博</p>
+      </div>
+      <div class="fl">
+        <p class="white font40">400-696-8898</p>
+        <p class="white mb15 pb10 font16">7*24小时贴心咨询请留下您的建议</p>
+        <p><a href="#" class="dsgbtn yue mr10">招商合作申请</a><a href="#" class="dsgbtn zi">APP 下载</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footerNav">
+    <div class="box">
+      <p class="copyRight">Copyright © 2015 . All Rights Reserved Powered By:Fractal-technology</p>
+      <ul>
+        <li><a href="#">免费预约量房</a></li>
+        <li><a href="#">无忧交易</a></li>
+        <li><a href="#">百搭屋定制</a></li>
+        <li><a href="#">线下工作室</a></li>
+        <li><a href="#">友情链接</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/common.js"></script>
+<script type="text/javascript">
+//注册验证
+$('.loginBtn').on('click',function() {
+  var username = $("#username").val();
+  var password = $("#password").val();
+
+  if (username=="" || username==null) {
+    alert('请输入联系电话');
+    return false;
+  }
+
+  if (username.length!=11) {
+    alert('请输入正确电话号码');
+    return false;
+  };
+
+  if (password=="" || password==null) {
+    alert('请输入密码');
+    return false;
+  }
+
+});
+
+$(function(){
+  var inpEle = document.getElementById('phone');
+  var number = /^1[3458]\d{9}$/;
+
+  window.onload = function(){    
+      inpEle.onblur = function(){
+        var inpVal = this.value;
+        if (!number.exec(inpVal)){
+          alert('请输入正确的手机号码');
+          return false;
+        };
+      }
+    }
+})
+
+//记住用户名密码
+$(function(){
+    if ($.cookie("rmbUser") == "true") {
+      $("#ck_rmbUser").attr("checked", true);
+      $("#username").val($.cookie("username"));
+      $("#password").val($.cookie("password"));
+    }
+});
+function Save() {
+    if ($("#ck_rmbUser").attr("checked")) {
+        var str_username = $("#username").val();
+        var str_password = $("#password").val();
+        $.cookie("rmbUser", "true", { expires: 7 }); //存储一个带7天期限的cookie
+        $.cookie("username", str_username, { expires: 7 });
+        $.cookie("password", str_password, { expires: 7 });
+    }
+    else {
+        $.cookie("rmbUser", "false", { expire: -1 });
+        $.cookie("username", "", { expires: -1 });
+        $.cookie("password", "", { expires: -1 });
+    }
+};
+</script>
+</body>
+</html>
