@@ -362,7 +362,7 @@ ul.desginList li span {font-size: 12px;color: #9b9b9b;display: block;overflow: h
 .adNew {height: 200px;background: url(../images/ad_new.jpg) no-repeat;text-align: center;overflow: hidden;color: #fff;font-size: 18px;}
 .adNew p {margin-top: 60px;font-size: 36px;color: #fff;font-weight: bold;}
 ul.dingList {display: block;margin-top:35px}
-ul.dingList li {display: block;float: left; width: 370px;height: 498px;background: #fff;margin-bottom: 30px;margin-right: 44px;}
+ul.dingList li {display: block;float: left; width: 370px;height: 498px;background: #fff;margin-bottom: 30px;margin-right: 44px;cursor: pointer;}
 ul.dingList li:nth-child(3n) {margin-right: 0;}
 ul.dingList li:hover {-webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.2);-moz-box-shadow: 0px 0px 5px rgba(0,0,0,.2);-o-box-shadow: 0px 0px 5px rgba(0,0,0,.2);box-shadow: 0px 0px 5px rgba(0,0,0,.2);}
 .dingImg {width: 370px;height: 278px;overflow: hidden;}
@@ -428,7 +428,7 @@ sup {font-size: 11px;}
 .wd_large {width: 335px}
 .wd_select {width: 222px;height: 36px;}
 .mbNo {margin-bottom: 0 !important;}
-.loadPic {width: 320px;height: 200px;border: 1px solid #eaeaea;background-position: -247px -510px;overflow: hidden;position: relative;cursor: pointer;}
+.loadPic {width: 320px;height: 200px;border: 1px solid #eaeaea;background: url(../images/loadpic.jpg) no-repeat top 60px center !important;overflow: hidden;position: relative;cursor: pointer;}
 .loadPic p {margin-top: 110px;text-align: center;font-size: 16px;color: #888}
 .loadPic img {width: 320px;height: 200px;position: absolute;display: block;z-index: 1;top: 0;left: 0}
 .loadPic img:hover {animation: none !important;}
@@ -510,6 +510,7 @@ ul.dsgList:last-of-type {margin-right: 0;}
 .bookMark {height: 40px;overflow: hidden;color: #333}
 .dsgInfo {height: 300px;}
 .dsgInfoFace {width: 300px;height: 300px;overflow: hidden; float: left; -webkit-border-radius: 20px;-moz-border-radius: 20px;-o-border-radius: 20px;border-radius: 20px;}
+.dsgInfoFace img {width: 300px;height: 300px;}
 .dsgTop {width: 860px;height: 300px;float: right;background: #e0e0e0}
 .pd25 {padding: 25px 25px 15px 25px}
 .ico_star {background-position:-392px -463px;width: 33px;height: 30px;margin-right: 5px;display: inline-block;}
@@ -581,3 +582,22 @@ ul.dsgList:last-of-type {margin-right: 0;}
 .contact li:last-child {margin-right: 0;}
 .contactTxt {margin:50px 0 10px 50px;}
 .contactTxt p {font-size: 16px;color: #333;line-height: 30px}
+
+/*无忧交易*/
+.progess {position: relative;height: 515px;background: url(../images/progess.jpg) no-repeat;}
+.progess p {color: #333;font-size: 16px;line-height: 30px;position: absolute;}
+.step_1 {left: 65px;bottom:150px; width: 290px;}
+.step_2 {left: 460px;top:75px; width: 315px;}
+.step_3 {right: 35px;bottom:66px; width: 305px;}
+
+.ident {height: 700px;padding-top: 179px; overflow: hidden;background: url(../images/dsg_yes.jpg) no-repeat;}
+.identTxt {position: relative; padding: 35px 0 30px 0;overflow: hidden;}
+.identTxt i {display: block;position: absolute;top: 0;left: 0; width: 100%;height: 360px;background: #000;filter:alpha(opacity=50);-moz-opacity:0.5;-webkit-opacity: 0.5;-o-opacity: 0.5;opacity: 0.5;}
+.identTxt p {color: #333;text-align: center;font-size: 16px;position: relative;z-index: 1;color: #fff}
+.identTxt b {color: #c2a891}
+.identBtn {padding: 0 15px;line-height: 52px;background: #1c1c26;font-size: 24px;color: #c2a891;display: inline-block;-webkit-border-radius: 10px;-moz-border-radius: 10px;-o-border-radius: 10px;border-radius: 10px;}
+.mt140 {margin-top: 140px;}
+.fs {font-style:italic;font-size: 24px;color: #c2a891}
+.identSologo {padding: 30px 0;background: #f5f5f5; text-align: center;}
+.identSologo p {line-height: 30px;font-size: 16px;}
+.identSologo b {color: #c2a891}
