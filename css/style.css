@@ -310,12 +310,13 @@ ul.desginList li span {font-size: 12px;color: #9b9b9b;display: block;overflow: h
 .ml70 {margin-left: 50px;}
 
 /*content*/
-.content {border-left: 1px solid #e4dfdb;border-right: 1px solid #e4dfdb;border-bottom: 1px solid #e4dfdb;margin-bottom: 80px;margin-top: 25px;}
+.content {border-left: 1px solid #e4dfdb;border-right: 1px solid #e4dfdb;border-bottom: 1px solid #e4dfdb;margin-top: 25px;}
 .service {height: 60px;background: #33333f;margin-bottom: 30px;position: relative;}
-.service i {display: block;position: absolute;top: -12px; left: -1px;z-index: 1; font-style: normal; width: 300px;line-height: 90px;background: #c2a992;text-align: center;font-size: 26px;color: #fff;-webkit-border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;-o-border-radius: 0 0 5px 5px;-ms-border-radius: 0 0 5px 5px;border-radius: 0 0 5px 5px} 
-.service ul {display: block;margin-left: 300px;}
+.service li i {display: none;position: absolute;top: -12px; left: -1px;z-index: 1; font-style: normal; width: 300px;line-height: 90px;background: #c2a992;text-align: center;font-size: 26px;color: #fff;-webkit-border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;-o-border-radius: 0 0 5px 5px;-ms-border-radius: 0 0 5px 5px;border-radius: 0 0 5px 5px} 
+.service ul {display: block;}
 .service li {display: block;float: left;cursor: pointer; width: 299px;line-height: 60px;position: relative;text-align: center;font-size: 18px;color: #fff;}
-.service li b {display: block;position: absolute;width: 100px;height: 2px;background: #c2a992;left: 50%;bottom: 0;margin-left: -50px;}
+.service li b{display: none}
+.service li:hover b {display: block;position: absolute;width: 100px;height: 2px;background: #c2a992;left: 50%;bottom: 0;margin-left: -50px;}
 .stepTle {height: 140px;overflow: hidden;}
 .step {width: 1020px;margin: 40px auto; border-top: 1px solid #ddd; }
 .step>p {line-height: 30px}
@@ -643,12 +644,12 @@ ul.dsgList:last-of-type {margin-right: 0;}
 /*报名弹窗*/
 .layer {display: none;}
 .mask {display: block;position: fixed; width: 100%; height: 100%;top: 0; left: 0;z-index: 10; background: #000;filter:alpha(opacity=70);-moz-opacity:0.7;-webkit-opacity: 0.7;-o-opacity: 0.7;opacity: 0.7;}
-.layerBox {position: fixed;top: 50%;left: 50%; z-index: 11;width: 458px;height: 520px;padding-top: 150px; margin: -335px 0 0 -229px;background:url(../images/layerbg.png) no-repeat top center #fff;-webkit-border-radius: 30px;-moz-border-radius: 30px;-o-border-radius: 30px;border-radius: 30px;}
-.layerBox i {position: absolute;top: -85px;left: 152px;width: 155px;height: 181px;background: url(../images/layer_logo.png) no-repeat;}
+.layerBox {position: fixed;top: 50%;left: 50%; z-index: 11;width: 458px;height: 420px;padding-top: 120px; margin: -270px 0 0 -229px;background:url(../images/layerbg.png) no-repeat top center #fff;-webkit-border-radius: 30px;-moz-border-radius: 30px;-o-border-radius: 30px;border-radius: 30px;}
+.layerBox i {position: absolute;top: -50px;left: 163px;width: 131px;height: 151px;background: url(../images/layer_logo.png) no-repeat;}
 .layerBox dl {display: block;margin-bottom: 8px;}
-.layerBox dt {display: block;float: left;width: 90px;line-height: 25px;height: 25px;font-size: 16px;color: #333;margin-left: 10px;}
-.layerBox input {display: inline-block;line-height: 25px;border: 1px solid #ccc;padding: 0 10px}
-.layerBox textarea {width: 290px;height: 100px;border: 1px solid #ccc}
+.layerBox dt {display: block;float: left;width: 90px;line-height: 20px;height: 20px;font-size: 16px;color: #333;margin-left: 10px;}
+.layerBox input {display: inline-block;line-height: 20px;border: 1px solid #ccc;padding: 0 10px}
+.layerBox textarea {width: 290px;height: 55px;border: 1px solid #ccc}
 .layer_footer {width: 357px;height: 48px;background: url(../images/layer_footer.jpg) no-repeat; margin: 10px auto}
 
 .agreement {display: block;position: fixed;z-index: 12; top: 50%;left: 50%;width: 800px;height: 600px; margin: -350px 0 0 -400px;background: #fff;-webkit-border-radius: 10px;-moz-border-radius: 10px;-o-border-radius: 10px;border-radius: 10px}
@@ -660,3 +661,13 @@ ul.dsgList:last-of-type {margin-right: 0;}
 .hot {border-bottom: 1px solid #ccc;padding-bottom: 15px;margin-top: 15px;}
 .hot img:hover {animation: none !important;}
 .dzSwiper {height: 560px}
+.sofa_tle {position: relative;height: 40px;line-height: 40px;text-align: center;margin-top: 10px;}
+.sofa_tle span {display: inline-block;position: relative;z-index: 2; padding: 0 15px;background: #fff;font-size: 24px;color: #333;line-height: 40px;}
+.sofa_tle i {position: absolute;display: block;width: 100%;height: 1px;background: #9f9e9e;top: 20px;left: 0;z-index: 1}
+.icoBox {border: 1px solid #e1dede;line-height: 38px;height: 38px;padding: 0 10px}
+.ico_phone {display: inline-block;width: 25px;height: 25px;background-position: -372px -804px;cursor: pointer;}
+.icoStar {display: inline-block;width: 25px;height: 25px;background-position: -430px -803px;cursor: pointer;}
+
+.partner {border: 1px solid #e4dfdb;margin-bottom: 30px;}
+.partner h1 {padding: 0 10px;background: #f2f2f2;line-height: 30px;font-size: 16px;color: #333;border-bottom: 1px solid #e4dfdb;}
+.partner td {width: 171px;text-align: center;height: 140px;vertical-align: middle;}

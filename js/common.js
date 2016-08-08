@@ -44,6 +44,7 @@ $('.nav').hover(function() {
 $('.serviceList').on('click', 'li', function(){
   var index = $(this).index();
   $('.serviceBox > div').eq(index).fadeIn(300).siblings().fadeOut(300);
-  $(this).append('<b></b>').siblings().find('b').remove();
+  $(this).find('i').show();
+  $(this).siblings().find('i').hide();
 });
 
