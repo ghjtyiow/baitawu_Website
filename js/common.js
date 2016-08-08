@@ -13,7 +13,7 @@ $(function(){
   var w =$(window).width();
   var postion = (w-1200)/2;
   var left = postion-150;
-  var right = postion-145;
+  var right = postion-191;
   $('.floatBar_left').css('right',right);
   if (w<=1440) {
     $('.floatBar_left').css('right','10px');
@@ -26,11 +26,6 @@ $('.toggleMenu').on('click', 'dd', function(){
   var index = $(this).index();
   $(this).addClass('corrent').siblings().removeClass()
   $('.toggleUl ul').eq(index).fadeIn(200).siblings().fadeOut(200);
-});
-
-//关闭固定层
-$('.close').on('click',function(){
-  $(this).parent().hide()
 });
 
 //返回顶部

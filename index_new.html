@@ -20,10 +20,9 @@
   	<div class="box topBar">
       <!-- <input type="text" class="icon topSearch" placeholder="搜索 案例/设计师/小区/楼盘"> -->
   		<ul>
-  			<li><a href="#" title="登录">用户登录</a></li>
-        <li><a href="#" title="注册">注册</a></li>
-  			<li><a href="#" class="login" title="设计师登录">设计师登录</a></li>
-  			<li><a href="#" class="appDownload" title="APP下载">APP下载</a></li>
+  			<!-- <li><a href="#" class="appDownload" title="APP下载">APP下载</a></li> -->
+        <li><a href="#" class="register" title="注册">注册</a></li>
+        <li><div class="topTxt"><i></i><a href="#"><p>用户登录</p></a><a href="#"><p>设计师登录</p></a></div></li>
   		</ul>
   	</div>
   </div>
@@ -31,10 +30,13 @@
       <div class="box nav">
         <ul>
           <li>
-            <a href="#">选设计师</a>
+            <a href="#">首页</a>
           </li>
           <li>
-            <a href="#">看案例/可见既可得</a>
+            <a href="#">看美图 / <span class="red_1">可见既可得</span></a>
+          </li>
+          <li>
+            <a href="#">找设计师</a>
           </li>
           <li>
             <a href="#">线下工作室</a>
@@ -42,26 +44,29 @@
           <li>
             <a href="#">产品中心</a>
           </li>
-          <li>
+          <li><i></i>
             <a href="#">无忧交易</a>
           </li>
           <li>
-            <a href="#">关于百搭屋</a>
+            <a href="#">百搭屋简介</a>
           </li>
         </ul>
         <div class="subNnav">
           <div class="mainNav">
+            <dl>
+              
+            </dl>
+            <dl>
+              <dd>
+                <a href="#">软装美图</a>
+              </dd>
+            </dl>
             <dl>
               <dd>
                 <a href="#">设计师认证</a>
               </dd>
               <dd>
                 <a href="#">设计师多样化</a>
-              </dd>
-            </dl>
-            <dl>
-              <dd>
-                <a href="#">软装美图</a>
               </dd>
             </dl>
             <dl>
@@ -83,6 +88,7 @@
           </div>
           <div class="menu">
             <dl>
+            <i></i>
               <dd>
                 <a href="#">无忧交易</a>
               </dd>
@@ -94,9 +100,9 @@
               <dd>
                 <a href="#">加入我们</a>
               </dd>
-              <dd>
+<!--               <dd>
                 <a href="#">招商合作</a>
-              </dd>
+              </dd> -->
             </dl>
           </div>
         </div>
@@ -131,7 +137,6 @@
 
   <!--floatBar-->
     <div class="floatBar_left">
-      <p class="close">x</p>
       <a href="#">
         <dl>
           <dt class="icon_func_1 icon"></dt>
@@ -142,6 +147,12 @@
         <dl>
           <dt class="icon_func_2 icon"></dt>
           <dd>预约量房</dd>
+        </dl>
+      </a>
+      <a href="#">
+        <dl>
+          <dt class="icon_func_6 icon"></dt>
+          <dd>找设计师</dd>
         </dl>
       </a>
       <a href="#">
@@ -162,8 +173,8 @@
           <dd>售后服务</dd>
         </dl>
       </a>
-      <img src="images/code.png" alt="百塔屋二维码">
-      <p class="phone">400-558-8888</p>
+      <div class="codeBar"><p><img src="images/code.png" alt="百塔屋二维码"></p></div>
+      <p class="phonebg">021-64810136</p>
      </div>
 
   <!--ToggleBar-->
@@ -175,39 +186,40 @@
         <span>软装设计是将一种风格的各产品形成的效果</span>
       </div>
       <div class="toggleNew">
+        <p class="hot"><a href="#"><img src="images/hot.png"></a></p>
         <dl class="toggleMenu">
-          <dd class="corrent">字段填写</dd>
-          <dd>字段填写</dd>
-          <dd>字段填写</dd>
-          <dd>字段填写</dd>
-          <dd>字段填写</dd>
+          <dd class="corrent">美式风格</dd>
+          <dd>法式风格</dd>
+          <dd>北欧风格</dd>
+          <dd>新中式风格</dd>
+          <dd>新古典风格</dd>
           <dt><a href="#">更多案列</a></dt>
         </dl>
         <div class="toggleUl">
           <ul class="ul sloganList">
-            <li><a href="#"><div class="sloganImg"><img src="images/ad.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad1.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad2.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad.jpg" alt=""></div><p>美式风格客厅</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad1.jpg" alt=""></div><p>美式风格餐厅</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad2.jpg" alt=""></div><p>美式风格卧室</p><span>推荐人群：</span></a></li>
           </ul>
           <ul class="ul sloganList hide">
-            <li><a href="#"><div class="sloganImg"><img src="images/ad.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad1.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad2.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_2_1.jpg" alt=""></div><p>法式风格餐厅</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_2_2.jpg" alt=""></div><p>法式风格客厅</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_2_3.jpg" alt=""></div><p>法式风格卧室</p><span>推荐人群：</span></a></li>
           </ul>
           <ul class="ul sloganList hide">
-            <li><a href="#"><div class="sloganImg"><img src="images/ad.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad1.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad2.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_2_1.jpg" alt=""></div><p>北欧风格沙发</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_3_2.jpg" alt=""></div><p>北欧风格客厅</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_3_3.jpg" alt=""></div><p>简约北欧风沙发</p><span>推荐人群：</span></a></li>
           </ul>
           <ul class="ul sloganList hide">
-            <li><a href="#"><div class="sloganImg"><img src="images/ad.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad1.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad2.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_4_1.jpg" alt=""></div><p>新中式风格客厅</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_4_2.jpg" alt=""></div><p>新中式风格客厅</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_4_3.jpg" alt=""></div><p>新中式风格卧室</p><span>推荐人群：</span></a></li>
           </ul>
           <ul class="ul sloganList hide">
-            <li><a href="#"><div class="sloganImg"><img src="images/ad.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad1.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
-            <li><a href="#"><div class="sloganImg"><img src="images/ad2.jpg" alt=""></div><p><b class="red_1 normal fr">¥80,000</b>案例名称如简约装饰</p><span>推荐人群：字段、字段、字段</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_5_1.jpg" alt=""></div><p>古典风格书房</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_5_2.jpg" alt=""></div><p>古典风格卧室</p><span>推荐人群：</span></a></li>
+            <li><a href="#"><div class="sloganImg"><img src="images/ad_5_3.jpg" alt=""></div><p>古典风格餐厅</p><span>推荐人群：</span></a></li>
           </ul>
         </div>
       </div>
@@ -223,19 +235,28 @@
       <a href="#"><b>更多设计师</b></a>
     </div>
     <div class="dsgBox">
-      <div class="leftDsg"><img src="images/dsg_1.jpg"></div>
       <div class="rightDsg">
         <ul class="clr">
-          <li><img src="images/dsg_2.jpg"></li>
-          <li><img src="images/dsg_3.jpg"></li>
-          <li><img src="images/dsg_4.jpg"></li>
+          <li><img src="images/ds_2.jpg"></li>
+          <li><img src="images/ds_3.jpg"></li>
+          <li><img src="images/ds_4.jpg"></li>
           <li class="icon"></li>
         </ul>
         <div class="clr over">
-          <p class="fl dsg_5"><img src="images/dsg_5.jpg"></p>
+          <p class="fl dsg_5"><img src="images/ds_5.jpg"></p>
           <p class="fr dsg_6"><img src="images/dsg_6.jpg"></p>
         </div>
       </div>
+      <div class="leftTxt">
+        <p class="font30 mb15">预约设计师</p>
+        <p>求解空间怎么利用？<br>
+        色彩怎么搭配？<br>
+        对尺寸没把握？<br>
+        一键呼叫！<br>
+        您身边的设计师！</p>
+      </div>
+      <div class="leftDsg"><img src="images/ds_1.jpg"></div>
+      
     </div>
   </div>
 
@@ -250,8 +271,8 @@
                 <div class="dsgPic_left"><img src="images/pic_1.jpg"></div>
                 <div class="dsgPic_right">
                   <div class="dsgAddress mb10 icon">
-                    <p class="font24 gray mb10">软装达人 工作室</p>
-                    <p class="font18 grey mb15">地址：上海普陀区长寿路88号1028室</p>
+                    <p class="font24 gray mb10">上河湾 </p>
+                    <p class="font18 grey mb15">地址：上海普陀区千阳南路88弄上河湾26号楼301室</p>
                     <p><a href="#" class="dsgbtn yue mr10">预约参观</a><a href="#" class="dsgbtn zi">在线咨询</a></p>
                   </div>
                   <ul>
@@ -262,32 +283,17 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="dsgPic_left"><img src="images/pic_1.jpg"></div>
+                <div class="dsgPic_left"><img src="images/pic_5.jpg"></div>
                 <div class="dsgPic_right">
                   <div class="dsgAddress mb10 icon">
-                    <p class="font24 gray mb10">软装达人 工作室</p>
-                    <p class="font18 grey mb15">地址：上海普陀区长寿路88号1028室</p>
+                    <p class="font24 gray mb10">文定生活</p>
+                    <p class="font18 grey mb15">地址：上海徐汇区文定路258号117室</p>
                     <p><a href="#" class="dsgbtn yue mr10">预约参观</a><a href="#" class="dsgbtn zi">在线咨询</a></p>
                   </div>
                   <ul>
-                    <li><img src="images/pic_2.jpg"></li>
-                    <li><img src="images/pic_3.jpg"></li>
-                    <li><img src="images/pic_4.jpg"></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="dsgPic_left"><img src="images/pic_1.jpg"></div>
-                <div class="dsgPic_right">
-                  <div class="dsgAddress mb10 icon">
-                    <p class="font24 gray mb10">软装达人 工作室</p>
-                    <p class="font18 grey mb15">地址：上海普陀区长寿路88号1028室</p>
-                    <p><a href="#" class="dsgbtn yue mr10">预约参观</a><a href="#" class="dsgbtn zi">在线咨询</a></p>
-                  </div>
-                  <ul>
-                    <li><img src="images/pic_2.jpg"></li>
-                    <li><img src="images/pic_3.jpg"></li>
-                    <li><img src="images/pic_4.jpg"></li>
+                    <li><img src="images/pic_6.jpg"></li>
+                    <li><img src="images/pic_7.jpg"></li>
+                    <li><img src="images/pic_8.jpg"></li>
                   </ul>
                 </div>
               </div>
@@ -297,43 +303,118 @@
     </div>
   </div>
 
-  <div class="box">
+
+  <div class="box pb20">
+      <div class="swiper-container dzSwiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="slogan">
+                    <p class="mb10">订制套餐 您想要的这里都有</p>
+                    <a href="#">
+                      <b>更多定制套餐</b>
+                    </a>
+                  </div>
+                  <ul class="dzList clr">
+                    <li>
+                      <a href="#">
+                        <p class="dz_left">
+                          <img src="images/dz_2.jpg"></p>
+                        <div class="dz_right">
+                          <p class="font24 gray mb15">混搭风格套餐</p>
+                          <p class="font16 grey mb5">面积：85㎡</p>
+                          <div class="dzBtnBox">
+                          <a href="#" class="dsgbtn yue mb10">预约参观</a>
+                          <a href="#" class="dsgbtn zi">预约参观</a>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <p class="dz_left">
+                          <img src="images/dz_3.jpg"></p>
+                        <div class="dz_right">
+                          <p class="font24 gray mb15">现代简约套餐</p>
+                          <p class="font16 grey mb5">面积：85㎡</p>
+                          <div class="dzBtnBox">
+                          <a href="#" class="dsgbtn yue mb10">预约参观</a>
+                          <a href="#" class="dsgbtn zi">预约参观</a>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="swiper-slide">
+                  <div class="slogan">
+                    <p class="mb10">订制产品 您想要的这里都有</p>
+                    <a href="#"><b>更多定制产品</b></a>
+                  </div>
+                  <ul class="dingzhi clr">
+                  <li><a href="#"><p class="dzImg"><img src="images/dz_1.jpg"></p><p class="font24 mb5 gray">百搭屋－床</p><p class="font14 grey">把生活的旋律按照自己的喜好调整，或抒情或恬淡，这里不用追赶时间，再流畅的线条里享受晨曦</p></a></li>
+                  <li><a href="#"><p class="dzImg"><img src="images/dz_1_2.jpg"></p><p class="font24 mb5 gray">百搭屋－椅子</p><p class="font14 grey">既要舒适和安全，又要足够的时尚美观，这款休闲椅可以充分满足身心轻松惬意的需求</p></a></li>
+                  <li><a href="#"><p class="dzImg"><img src="images/dz_1_3.jpg"></p><p class="font24 mb5 gray">百搭屋－博古架</p><p class="font14 grey">明暗虚实，疏密有间，这是东方特有的思辨美学。养志、守静、蓄德的向心力，于万千思绪中，找到一个处置</p></a></li>
+                  <li><a href="#"><p class="dzImg"><img src="images/dz_1_4.jpg"></p><p class="font24 mb5 gray">百搭屋－沙发</p><p class="font14 grey">将幸福的概念融入设计之中，给生活一份清新，幸福的日子一如这线条</p></a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="swiper-pagination dsgBottom"></div>
+
+      </div>
+      
+    </div>
+
+<!--   <div class="box mb30">
     <div class="slogan">
       <p class="mb10">订制产品 您想要的这里都有</p>
       <a href="#"><b>更多定制产品</b></a>
     </div>
-    <ul class="dingzhi clr">
-      <li><a href="#"><p class="dzImg"><img src="images/dz_1.jpg"></p><p class="font24 mb5 gray">维格尚品-餐椅</p><p class="font14 grey">将幸福的概念融入设计之中，给生活一份清新，幸福的日子一如这线条</p></a></li>
-      <li><a href="#"><p class="dzImg"><img src="images/dz_1.jpg"></p><p class="font24 mb5 gray">维格尚品-餐椅</p><p class="font14 grey">将幸福的概念融入设计之中，给生活一份清新，幸福的日子一如这线条</p></a></li>
-      <li><a href="#"><p class="dzImg"><img src="images/dz_1.jpg"></p><p class="font24 mb5 gray">维格尚品-餐椅</p><p class="font14 grey">将幸福的概念融入设计之中，给生活一份清新，幸福的日子一如这线条</p></a></li>
-      <li><a href="#"><p class="dzImg"><img src="images/dz_1.jpg"></p><p class="font24 mb5 gray">维格尚品-餐椅</p><p class="font14 grey">将幸福的概念融入设计之中，给生活一份清新，幸福的日子一如这线条</p></a></li>
-    </ul>
-  </div>
+    <div class="swiper-container dz_Swiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <ul class="dingzhi clr">
+                  
+                </ul>
+              </div>
+              <div class="swiper-slide">
+                <ul class="dingzhi clr">
+                  <li><a href="#"><p class="dzImg"><img src="images/dz_1.jpg"></p><p class="font24 mb5 gray">百搭屋－床</p><p class="font14 grey">把生活的旋律按照自己的喜好调整，或抒情或恬淡，这里不用追赶时间，再流畅的线条里享受晨曦</p></a></li>
+                  <li><a href="#"><p class="dzImg"><img src="images/dz_1_2.jpg"></p><p class="font24 mb5 gray">百搭屋－椅子</p><p class="font14 grey">既要舒适和安全，又要足够的时尚美观，这款休闲椅可以充分满足身心轻松惬意的需求</p></a></li>
+                  <li><a href="#"><p class="dzImg"><img src="images/dz_1_3.jpg"></p><p class="font24 mb5 gray">百搭屋－博古架</p><p class="font14 grey">明暗虚实，疏密有间，这是东方特有的思辨美学。养志、守静、蓄德的向心力，于万千思绪中，找到一个处置</p></a></li>
+                  <li><a href="#"><p class="dzImg"><img src="images/dz_1_4.jpg"></p><p class="font24 mb5 gray">百搭屋－沙发</p><p class="font14 grey">将幸福的概念融入设计之中，给生活一份清新，幸福的日子一如这线条</p></a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="swiper-pagination dsgBottom"></div>
+    </div>
+    
+  </div> -->
 
   <!--footer-->
   <div class="footerCall">
     <div class="box over">
       <div class="fr">
-        <p class="codeBox"><img src="images/footer_code.png" title="关注微信">关注微信</p>
-        <p class="codeBox ml70 mr15"><img src="images/footer_code.png" title="关注微博">关注微博</p>
+        <p class="codeBox fl"><img src="images/appcode.jpg" title="APP下载"><span class="appbtn">APP下载</span></p>
+        <p class="codeBox fl ml20 mr50"><img src="images/weixincode.jpg" title="关注微信">关注微信</p>
+        <div class="fl">
+          <p class="white font40 mt20">021-64810136</p>
+          <p class="white mb15 pb10 font18">工作时间：周一到周日9:30-18:00</p>
+        </div>
       </div>
-      <div class="fl">
-        <p class="white font40">400-696-8898</p>
-        <p class="white mb15 pb10 font16">7*24小时贴心咨询请留下您的建议</p>
-        <p><a href="#" class="dsgbtn yue mr10">招商合作申请</a><a href="#" class="dsgbtn zi">APP 下载</a></p>
+      <div class="footer_ico">
+        <ul>
+          <li><a href="javascript:;" class="freeLook"><span class="icon ico_ft_1"></span><p>免费预约量房</p></a></li>
+          <li><a href="#"><span class="icon ico_ft_2"></span><p>无忧交易</p></a></li>
+          <li><a href="#"><span class="icon ico_ft_3"></span><p>看案例</p></a></li>
+          <li><a href="#"><span class="icon ico_ft_4"></span><p>线下工作室</p></a></li>
+        </ul>
       </div>
+      
     </div>
   </div>
   <div class="footerNav">
     <div class="box">
       <p class="copyRight">Copyright © 2015 . All Rights Reserved Powered By:Fractal-technology</p>
-      <ul>
-        <li><a href="#">免费预约量房</a></li>
-        <li><a href="#">无忧交易</a></li>
-        <li><a href="#">百搭屋定制</a></li>
-        <li><a href="#">线下工作室</a></li>
-        <li><a href="#">友情链接</a></li>
-      </ul>
     </div>
   </div>
 
